@@ -14,7 +14,7 @@ spec:
         app: pro690-app
     spec:
       containers:
-        - image: dnglglmm/pro690-g13-argocd:sha-0aaeb680531352b5f0225cc33ab57b9ad90aed58
+        - image: dnglglmm/pro690-g13-argocd:sha-4d55b0f03427a2e311695b432ed4097f38df568b
           name: pro690-app
           ports:
             - containerPort: 8080
