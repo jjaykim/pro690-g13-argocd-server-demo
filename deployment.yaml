@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: pro690-app
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: pro690-app
+  template:
+    metadata:
+      labels:
+        app: pro690-app
+    spec:
+      containers:
+        - image: dnglglmm/argocd-demo:sha-7678dc95e560d2ad515666b934876b8c137c4669
+          name: pro690-app
+          ports:
+            - containerPort: 8080
