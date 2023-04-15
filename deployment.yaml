@@ -4,6 +4,7 @@ metadata:
   name: pro690-app
 spec:
   replicas: 2
+  revisionHistoryLimit: 2
   selector:
     matchLabels:
       app: pro690-app
